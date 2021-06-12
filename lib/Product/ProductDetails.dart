@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intern/LoginScreens/ZoomScreen/item.dart';
 
 // ignore: must_be_immutable
 class ProductDetails extends StatefulWidget {
@@ -44,13 +45,19 @@ class _ProductDetailsState extends State<ProductDetails> {
         children: <Widget>[
           // Product Image Container with the height 40% of the screen height
 
-  //*************************** TODO IMPLEMENTATION FOR ZOOM SCREEN HERE IN THIS CONTAINER ***************************/
+          //*************************** TODO IMPLEMENTATION FOR ZOOM SCREEN HERE IN THIS CONTAINER ***************************/
           Container(
-            height: screenData.height * 0.4,
-            padding: EdgeInsets.zero,
-            child: Image.asset(widget.data.getImage().toString(),
-                fit: BoxFit.cover),
-          ),
+              height: screenData.height * 0.4,
+              padding: EdgeInsets.zero,
+              child: InkWell(
+                onTap: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => itemPage()));
+                },
+                child: Image.asset(
+                  widget.data.getImage().toString(),
+                  fit: BoxFit.cover,
+                ),
+              )),
 
           // Product Name container
           Container(

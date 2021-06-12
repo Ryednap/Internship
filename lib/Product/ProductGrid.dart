@@ -31,7 +31,16 @@ class _ProductsState extends State<Products> {
     ProductData("B&O Headphone", "Black Premium Quality Headphone B&O total Wireless",
                 "Very Comfortable 2.4 GHz bandwidth\ntotal Wireless Headphone.\nAvailable in two Colors.",
                 120, 3, "images/2headphone.jpeg"
-              )
+              ),
+    ProductData("B&O Headphone", "Black Premium Quality Headphone B&O total Wireless",
+                "Very Comfortable 2.4 GHz bandwidth\ntotal Wireless Headphone.\nAvailable in two Colors.",
+                120, 3, "images/2headphone.jpeg"
+              ),
+    ProductData("B&O Headphone", "Black Premium Quality Headphone B&O total Wireless",
+                "Very Comfortable 2.4 GHz bandwidth\ntotal Wireless Headphone.\nAvailable in two Colors.",
+                120, 3, "images/2headphone.jpeg"
+              ),
+
   ];
   
 
